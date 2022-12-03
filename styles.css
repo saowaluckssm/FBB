@@ -166,9 +166,14 @@ img {
 .summary-subtotal,
 .summary-total,
 .tax-total,
-.shipping-total {
+.shipping-total,
+.summary-promo {
   display: flex;
   justify-content: space-between;
+}
+
+.hide {
+  display: none;
 }
 
 .scrolled-up-second-nav {

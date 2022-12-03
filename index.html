@@ -237,7 +237,25 @@
                         </div>
                       </div>
                     </div>
-                  </div>             
+                  </div>  
+                  <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter a promotional code"
+                    aria-label="Enter a promotional code"
+                    id="discount-code"
+                    name="discount-code"
+                  />
+
+                  <button
+                    class="btn btn-outline-primary"
+                    type="button"
+                    id="discount-code-btn"
+                  >
+                    Apply
+                  </button>
+                </div>           
                 <hr class="divider">
                 <div>
                   <div class="summary-subtotal">
@@ -246,26 +264,33 @@
                       class="subtotal-value final-value"
                       id="basket-subtotal"
                     >
-                      $ 160.00
+                      $160.00
                     </div>
                    
                   </div>
+                   <div class="summary-promo hide">
+                      <div class="promo-title">Discount</div>
+                      <div
+                        class="promo-value final-value"
+                        id="basket-promo"
+                      ></div>
+                    </div>
                   <div class="tax-total">
                     <div>Tax (7%)</div>
                     <div class="tax-value final-value" id="basket-tax">
-                      $ 11.02
+                      $11.02
                     </div>
                   </div>
                   <div class="shipping-total">
                     <div>Shipping</div>
-                    <div class="shipping-value final-value" id="basket-shipping">$ 10.00</div>
+                    <div class="shipping-value final-value" id="basket-shipping">$10.00</div>
                   </div>
                   
 
                   <div class="summary-total">
                     <div class="total-title">Total</div>
                     <div class="total-value final-value" id="basket-total">
-                      $ 160.00
+                      $160.00
                     </div>
                   </div>
                 </div>
