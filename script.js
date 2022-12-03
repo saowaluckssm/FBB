@@ -40,27 +40,22 @@ const products = [
   },
 ];
 
-window.addEventListener('DOMContentLoaded', function () {
-  autohide_nav = document.querySelector('.autohide');
-  sticky_nav = document.querySelector('.secondary-nav');
+$(function () {
+  let autohide_nav = $('.autohide');
+  let sticky_nav = $('.secondary-nav');
 
-  if (autohide_nav) {
-    var last_scroll_top = 0;
-    window.addEventListener('scroll', function () {
-      let scroll_top = window.scrollY;
-      if (scroll_top < last_scroll_top) {
-        autohide_nav.classList.remove('scrolled-down');
-        autohide_nav.classList.add('scrolled-up');
+  $(window).scroll(function () {
+    if ($(window).scrollTop() <= 0) {
+      autohide_nav.removeClass('scrolled-down');
+      autohide_nav.addClass('scrolled-up');
 
-        sticky_nav.classList.remove('scrolled-up-second-nav');
-      } else {
-        autohide_nav.classList.remove('scrolled-up');
-        autohide_nav.classList.add('scrolled-down');
-        sticky_nav.classList.add('scrolled-up-second-nav');
-      }
-      last_scroll_top = scroll_top;
-    });
-  }
+      sticky_nav.removeClass('scrolled-up-second-nav');
+    } else {
+      autohide_nav.removeClass('scrolled-up');
+      autohide_nav.addClass('scrolled-down');
+      sticky_nav.addClass('scrolled-up-second-nav');
+    }
+  });
 });
 
 /* actions */
