@@ -68,7 +68,7 @@ img {
   align-items: center;
   margin-bottom: 3rem;
   border-bottom: rgba(0, 0, 0, 0.175) 1px solid;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.5s ease-in-out;
   transform: translateY(0);
 }
 
@@ -106,6 +106,9 @@ img {
   margin: 10px 0;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .basket-product .item {
@@ -171,18 +174,18 @@ img {
 .scrolled-up-second-nav {
   position: fixed;
   z-index: 10;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   transform: translateY(-140px);
 }
 
 .scrolled-down {
   transform: translateY(-100%);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .scrolled-up {
   transform: translateY(0);
-  transition: all 0.9s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 576px) {
