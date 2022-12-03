@@ -129,6 +129,7 @@ img {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  /* font-size: 14px; */
 }
 
 .quantity input {
@@ -189,5 +190,42 @@ img {
 @media (max-width: 414px) {
   .second-title {
     font-size: 16px;
+  }
+  .product-name,
+  .price,
+  .subtotal,
+  .discount,
+  .quantity input {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  div.card-body {
+    padding: 8px;
+  }
+
+  div.product-details {
+    width: 140px;
+  }
+
+  .row > * {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .quantity input {
+    padding: 1px;
+    width: 30px;
+  }
+
+  div.product-details {
+    width: 120px;
+  }
+
+  p {
+    font-size: 12px;
   }
 }
