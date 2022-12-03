@@ -179,7 +179,7 @@ img {
 .scrolled-up-second-nav {
   position: fixed;
   z-index: 10;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
   transform: translateY(-140px);
 }
 
@@ -190,7 +190,7 @@ img {
 
 .scrolled-up {
   transform: translateY(0);
-  transition: all 0.7s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 576px) {
