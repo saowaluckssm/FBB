@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>FBB Challenge</title>
+  </head>
+  <body>
+    <header>
+      <nav class="autohide nav main-nav">
+        <div class="nav-container">
+          <div class="logo">
+            <img src="./img/IMG_0684.PNG" alt="logo">
+          </div>
+          
+        </div>
+      </nav>
+      <nav
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+        class="nav secondary-nav"
+      >
+        <div class="container">
+          <ol class="breadcrumb breadcrumb-list">
+            <li class="breadcrumb-item">Shipping</li>
+            <li class="breadcrumb-item">Billing</li>
+            <li class="breadcrumb-item active">Review</li>
+          </ol>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main con -->
+    <main>
+      <div class="container">
+        <h2>Review & Payment</h2>
+        <h5 class="mg-20 second-title">
+          Review your shipping address and billing address
+        </h5>
+        <div class="row mg-4rem">
+          <div class="col-sm-4 col-md-5 col-lg-6 col-xl-7 left-col">
+            <div class="card mg-10">
+              <div class="card-body">
+                <h5 class="card-title">Shipping information</h5>
+                <div>
+                  <p>Saowaluck Morales</p>
+                  <p>106 baldwin ave. Jersey City, New Jersey 07306</p>
+                  <p>555-555-5555</p>
+                </div>
+              </div>
+            </div>
+            <div class="card mg-10">
+              <div class="card-body">
+                <h5 class="card-title">Billing information</h5>
+                <div>
+                  <p>Saowaluck Morales</p>
+                  <p>106 baldwin ave. Jersey City, New Jersey 07306</p>
+                  <p>555-555-5555</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8 col-md-7 col-lg-6 col-xl-5">
+            <div class="card mg-10">
+              <div class="card-body">
+                <h5 class="card-title">Order summary</h5>
+                <!-- <div class="basket"> -->
+                  <div class="basket-product">
+                    <div class="item mg-10">
+                      <div class="product-image">
+                        <img
+                          src="https://images.pexels.com/photos/8101510/pexels-photo-8101510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                          alt="Placholder Image"
+                          class="product-img"
+                        />
+                      </div>
+                      <div class="product-details">
+                        <div class="product-name">
+                          <strong
+                            ><span class="item-quantity">1</span> x
+                          </strong>
+                          Product A Super face serum
+                        </div>
+                        <div class="price-detail mg-10">
+                          <div class="price">$ 60.00</div>
+                          <div class="discount">(Buy 2 for 100)</div>
+                        </div>
+
+                        <div class="quantity">
+                          <input
+                            type="number"
+                            value="1"
+                            min="1"
+                            class="quantity-field"
+                          />
+                        </div>
+                      </div>
+                      <div class="subtotal-detail">
+                        <div class="subtotal">$ 60.00</div>
+                        <div class="remove">
+                          <button type="button" class="btn btn-remove">
+                            <i class="icon-trash"/></i> 
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item mg-10">
+                      <div class="product-image">
+                        <img
+                          src="https://images.pexels.com/photos/7796376/pexels-photo-7796376.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                          alt="Placholder Image"
+                          class="product-img"
+                        />
+                      </div>
+                      <div class="product-details">
+                        <div class="product-name">
+                          <strong
+                            ><span class="item-quantity">1</span> x
+                          </strong>
+                          Product B Super face serum
+                        </div>
+                        <div class="price-detail mg-10">
+                          <div class="price">$ 70.00</div>
+                          <div class="discount">(Buy 2 get 1 free)</div>
+                        </div>
+
+                        <div class="quantity">
+                          <input
+                            type="number"
+                            value="1"
+                            min="1"
+                            class="quantity-field"
+                          />
+                        </div>
+                      </div>
+                      <div class="subtotal-detail">
+                        <div class="subtotal">$ 70.00</div>
+                        <div class="remove">
+                          <button type="button" class="btn btn-remove">
+                            <i class="icon-trash"/></i> 
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item mg-10">
+                      <div class="product-image">
+                        <img
+                          src="https://images.pexels.com/photos/6690879/pexels-photo-6690879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                          alt="Placholder Image"
+                          class="product-img"
+                        />
+                      </div>
+                      <div class="product-details">
+                        <div class="product-name">
+                          <strong
+                            ><span class="item-quantity">1</span> x
+                          </strong>
+                          Product C Super moisturizer
+                        </div>
+                        <div class="price-detail mg-10">
+                          <div class="price">$ 10.00</div>
+                          <div class="discount"></div>
+                        </div>
+
+                        <div class="quantity">
+                          <input
+                            type="number"
+                            value="1"
+                            min="1"
+                            class="quantity-field"
+                          />
+                        </div>
+                      </div>
+                      <div class="subtotal-detail">
+                        <div class="subtotal">$ 10.00</div>
+                        <div class="remove">
+                          <button type="button" class="btn btn-remove">
+                            <i class="icon-trash"/></i> 
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item mg-10">
+                      <div class="product-image">
+                        <img
+                          src="https://images.pexels.com/photos/12035711/pexels-photo-12035711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                          alt="Placholder Image"
+                          class="product-img"
+                        />
+                      </div>
+                      <div class="product-details">
+                        <div class="product-name">
+                          <strong
+                            ><span class="item-quantity">1</span> x
+                          </strong>
+                          Product D Super moisturizer
+                        </div>
+                        <div class="price-detail mg-10">
+                          <div class="price">$ 20.00</div>
+                          <div class="discount"></div>
+                        </div>
+
+                        <div class="quantity">
+                          <input
+                            type="number"
+                            value="1"
+                            min="1"
+                            class="quantity-field"
+                          />
+                        </div>
+                      </div>
+                      <div class="subtotal-detail">
+                        <div class="subtotal">$ 20.00</div>
+                        <div class="remove">
+                          <button type="button" class="btn btn-remove">
+                            <i class="icon-trash"/></i> 
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- </div> -->
+
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter a promotional code"
+                    aria-label="Enter a promotional code"
+                  />
+
+                  <button
+                    class="btn btn-outline-primary"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Apply
+                  </button>
+                </div>
+                <div>
+                  <div class="summary-subtotal">
+                    <div class="subtotal-title">Subtotal</div>
+                    <div
+                      class="subtotal-value final-value"
+                      id="basket-subtotal"
+                    >
+                      $ 160.00
+                    </div>
+                    <!-- <div class="summary-promo hide">
+                      <div class="promo-title">Promotion</div>
+                      <div
+                        class="promo-value final-value"
+                        id="basket-promo"
+                      ></div>
+                    </div> -->
+                  </div>
+                  <div class="tax-total">
+                    <div>Tax (7%)</div>
+                    <div class="tax-value final-value" id="basket-tax">
+                      $ 11.02
+                    </div>
+                  </div>
+                  <div class="shipping-total">
+                    <div>Shipping</div>
+                    <div class="shipping-value final-value" id="basket-shipping">$ 10.00</div>
+                  </div>
+                  
+
+                  <div class="summary-total">
+                    <div class="total-title">Total</div>
+                    <div class="total-value final-value" id="basket-total">
+                      $ 160.00
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-grid gap-2 summary-checkout">
+              <button type="button" class="checkout-cta btn btn btn-primary">
+                Go to Secure Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js" />
+  </body>
+</html>
