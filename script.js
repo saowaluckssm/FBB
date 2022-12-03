@@ -45,7 +45,8 @@ $(function () {
   let sticky_nav = $('.secondary-nav');
 
   $(window).scroll(function () {
-    if ($(window).scrollTop() <= 0) {
+    let last_scroll_top = 0;
+    if ($(window).scrollTop() <= last_scroll_top) {
       autohide_nav.removeClass('scrolled-down');
       autohide_nav.addClass('scrolled-up');
 
@@ -55,6 +56,8 @@ $(function () {
       autohide_nav.addClass('scrolled-down');
       sticky_nav.addClass('scrolled-up-second-nav');
     }
+
+    last_scroll_top = $(window).scrollTop();
   });
 });
 
